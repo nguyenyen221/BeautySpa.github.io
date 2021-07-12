@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Parisienne&family=Tajawal:wght@300;400;500;700&display=swap"
+	rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		.nav-link {
+			font-family: 'Tajawal', sans-serif;
+			font-size: 18px;
+			color: #4FC2D6;
+			font-weight: 300
+		}
+
+		.nav-item {
+			width: 120px;
+			text-align: right;
+		}
+
+		.nav-link:hover {
+			font-weight: 500;
+			color: #4FC2D6;
+		}
+
+		.landing {
+			position: relative;
+			object-fit: cover;
+			height: 750px;
+			width: 100%;
+		}
+
+		.video-baby video {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+
+			z-index: -5;
+		}
+
+		.landing .absolute-content {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			color: white;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+		.landing .absolute-content button {
+			background-color: #4FC2D6;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			font-size: 16px;
+			width: 300px;
+			height: 60px;
+			transition: 0.3s;
+			font-family: Tajawal;
+		}
+
+		.landing .absolute-content button:hover {
+			background-color: #6ED4DD;
+			color: white;
+		}
+
+		.landing .absolute-content button:clicked {
+			background-color: #6ED4DD;
+			color: white;
+		}
+		.landingbtn{
+			background-color: #4FC2D6;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			font-size: 16px;
+			width: 300px;
+			height: 60px;
+			transition: 0.3s;
+			font-family: Tajawal;
+			text-decoration: none;
+		}
+		.landingbtn:hover{
+			background-color: #6ED4DD;
+			color: white;
+			text-decoration: none;
+		}
+		.btn2 {
+
+			background-color: #4FC2D6;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			font-size: 16px;
+			font-family: Tajawal;
+			transition: 0.3s;
+		}
+
+		.btn2:hover {
+			background-color: #6ED4DD;
+			color: white;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+		}
+
+		.image {
+
+			opacity: 1;
+			display: block;
+			width: 300px;
+			height: 300px;
+			transition: .5s ease;
+			backface-visibility: hidden;
+			object-fit: cover;
+		}
+
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.container:hover .image {
+			opacity: 0.3;
+
+		}
+
+		.container:hover .middle {
+			opacity: 1;
+
+		}
+
+		.text {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			color: white;
+			font-size: 16px;
+			padding: 16px 32px;
+			background-color: #4FC2D6;
+
+		}
+
+		h1 {
+			font-family: 'Frank Ruhl Libre', serif;
+			font-size: 48px;
+		}
+
+		h2 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 80px;
+
+		}
+
+		h3 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 500;
+			font-size: 28px;
+		}
+
+		h4 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+		}
+
+		.footer {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #4FC2D6;
+			color: white;
+			text-align: center;
+		}
+
+		.email-register {
+			display: flex;
+			width: 50%;
+			margin: 0 auto;
+			grid-column-gap: 5px;
+		}
+
+		.input-subcribe {
+			width: 100%;
+			padding: 1em;
+			background: #fff;
+			border: 1px solid rgba(0, 0, 0, .12);
+			font-family: inherit;
+			font-size: 15px;
+			line-height: normal;
+			outline: none;
+		}
+
+		.btn-subcribe {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 500; 
+			padding: 1em 2.5em;
+			color: white;
+			border: 1px solid #fff;
+			background-color: #4FC2D6;
+		}
+
+		.btn-subcribe:hover {
+			background-color: #FFF;
+			color: #4FC2D6;
+
+		}
+		.fa {
+			font-size: 30px;
+			width: 55px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+			border-radius: 50%;
+			border: 3px solid;
+			padding: 10px 10px;
+			
+		}
+
+		.fa:hover {
+			
+			color: #4FC2D6;
+			background-color: white;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		.fa-facebook {
+			background: #4FC2D6;
+			color: white;
+		}
+
+		.fa-instagram {
+			background: #4FC2D6;
+			color: white;
+		}
+
+
+		.fa-youtube {
+			background: #4FC2D6;
+			color: white;
+		}
+		.fa-twitter {
+			background: #4FC2D6;
+			color: white;
+		}
+		.socialbtn{
+			display: flex;
+			grid-column-gap: 15px;
+			justify-content: center;
+		}
+	</style>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm bg-light fixed-top"
+	style="padding-left: 70px; padding-right: 70px; height: 60px">
+	<!-- Brand/logo -->
+	<a class="navbar-brand" href="index.html">
+		<p
+		style="color: #4FC2D6; padding-top: 10px; font-family: 'Tajawal', sans-serif; font-size: 28px; font-weight: 300">
+	Beauty Spa</p>
+</a>
+
+
+<ul class="navbar-nav ml-auto">
+	<li class="nav-item">
+		<a class="nav-link" style="font-weight: bold;" href="index.html">Home</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="SpaService.html">Service</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="SpaAboutUs.html">About Us</a>
+	</li>
+</ul>
+</nav>
+<br>
+
+<div class="landing">
+	<div class="video-baby" style="width: 100%; position: absolute;">
+		<video autoplay muted loop>
+			<source src="C:\Users\PC\Desktop\code\code images\spa\landing.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="absolute-content">
+			<div>
+				<h2>Beauty from inside</h2>
+				<p style="font-family: 'Parisienne', cursive; font-size: 48px; ">Be natural, be beautiful, be you!</p>
+				<button><a class="landingbtn" href="SpaService.html">Discover now!</a></button>
+				<button><a class="landingbtn" href="SpaAboutUs.html">About us</a></button>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+
+
+	<section>
+		<div class="row" style="margin: 70px; justify-content: center;">
+
+			<div class="col">
+				<div class="container">
+					<img src="C:\Users\PC\Desktop\code\code images\spa\fullbody.jpg" alt="Avatar" class="image"
+					style="width:100%">
+					<div class="middle">
+						<div class="text">Full Body</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="container">
+					<img src="C:\Users\PC\Desktop\code\code images\spa\handandfoot.jpg" alt="Avatar" class="image"
+					style="width:100%">
+					<div class="middle">
+						<div class="text">Hand and Foot</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="container">
+					<img src="C:\Users\PC\Desktop\code\code images\spa\shoulder.jpg" alt="Avatar" class="image"
+					style="width:100%">
+					<div class="middle">
+						<div class="text">Shoulder</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="container">
+					<img src="C:\Users\PC\Desktop\code\code images\spa\gamguard.jpg" alt="Avatar" class="image"
+					style="width:100%">
+					<div class="middle">
+						<div class="text">Gam Guard</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="row" style="margin: 70px">
+			<div class="col">
+				<h1>A LUXURY SALON EXPERIENCE IN THE HEART OF THE FINANCIAL DISTRICT CITY</h1>
+
+			</div>
+			<div class="col">
+				<h3>
+					Beauty Spa is the perfect place to get an exceptional hairstyle from top-notch, internationally
+					trained stylists and colorists.
+				</h3>
+				<br>
+				<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 18px">
+					Situated in Lower Manhattan, our two boutique salons serve Wall Street and the Financial District,
+					as well as Battery Park and the World Trade Center area. We are the most recommended salon for
+					hotels and spas in the Financial District and Battery Park neighborhoods.Our salon provides services
+					to men and women of any hair type and style: edgy or classic, straight or curly, short or long. We
+					believe that hair should be defined by its nature and its shape, and we use the industry's top
+					brand, Keratase to bring out your hair's best. <br><br>
+
+					Our mission is to provide you with forward-thinking, sophisticated style. Our space, designed by
+					Italian architect Matias Sagaria, is filled with linear balance and injects our inspiration with
+					modernity and purity.
+				</p>
+				<br>
+				<button class="btn2" style="width: 100%">Read more</button>
+
+			</div>
+
+		</div>
+	</section>
+
+	<div class="footer">
+		<h4 style="letter-spacing: 3px; "> 081-928-7888 </h4> <br>
+		<h4 style="letter-spacing: 1px"> Join our list </h4> <br>
+		<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 18px; line-height: 20px">Subscribe to our mailing list to receive updates and promotional offers.</p> <br>
+
+		<div class="email-register">
+			<input placeholder="Email address" class="input-subcribe">
+			<button class="btn-subcribe">SUBCRIBE</button>
+		</div>
+		<br>
+		<div class="socialbtn" >
+			<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+			<a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
+		</div>
+		<br>
+		<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 18px; line-height: 20px">Beauty Spa Copyright 2021. All right reserved.</p>
+	</div>
+
+
+</body>
+
+</html>
