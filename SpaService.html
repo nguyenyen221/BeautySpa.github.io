@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Parisienne&family=Tajawal:wght@300;400;500;700&display=swap"
+	rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style>
+		.nav-link {
+			font-family: 'Tajawal', sans-serif;
+			font-size: 18px;
+			color: #4FC2D6;
+			font-weight: 300
+		}
+
+		.nav-item {
+			width: 120px;
+			text-align: right;
+		}
+
+		.nav-link:hover {
+			font-weight: 500;
+			color: #4FC2D6;
+		}
+
+		
+		h1 {
+			font-family: 'Frank Ruhl Libre', serif;
+			font-size: 48px;
+		}
+
+		h2 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 300;
+			font-size: 56px;
+
+		}
+
+		h3 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 56px;
+		}
+
+		h4 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+		}
+		h5 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 26px;
+			margin: 0;
+		}
+		h6 {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 300;
+			font-size: 26px;
+			margin: 0;
+		}
+
+		.contentservice{
+			padding-bottom: 25px;
+		}
+		.btnbooking{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			justify-content: center;
+			background-color: #4FC2D6;
+			color: #FFF;
+			border: none;
+			width: 100%;
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+		}
+		.btnbooking:hover {
+			background-color: #6ED4DD;
+			
+		}
+		.btnbooking2{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			justify-content: center;
+			background-color: #4FC2D6;
+			color: #FFF;
+			border: none;
+			width: 100%;
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+		}
+		.btnbooking2:hover {
+			background-color: #6ED4DD;
+			
+		}
+
+
+		.footer {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #4FC2D6;
+			color: white;
+			text-align: center;
+		}
+
+		.email-register {
+			display: flex;
+			width: 50%;
+			margin: 0 auto;
+			grid-column-gap: 5px;
+		}
+
+		.input-subcribe {
+			width: 100%;
+			padding: 1em;
+			background: #fff;
+			border: 1px solid rgba(0, 0, 0, .12);
+			font-family: inherit;
+			font-size: 15px;
+			line-height: normal;
+			outline: none;
+		}
+
+		.btn-subcribe {
+			font-family: 'Tajawal', sans-serif;
+			font-weight: 500; 
+			padding: 1em 2.5em;
+			color: white;
+			border: 1px solid #fff;
+			background-color: #4FC2D6;
+		}
+
+		.btn-subcribe:hover {
+			background-color: #FFF;
+			color: #4FC2D6;
+
+		}
+		.fa {
+			font-size: 30px;
+			width: 55px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+			border-radius: 50%;
+			border: 3px solid;
+			padding: 10px 10px;
+			
+		}
+
+		.fa:hover {
+			
+			color: #4FC2D6;
+			background-color: white;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		.fa-facebook {
+			background: #4FC2D6;
+			color: white;
+		}
+
+		.fa-instagram {
+			background: #4FC2D6;
+			color: white;
+		}
+
+
+		.fa-youtube {
+			background: #4FC2D6;
+			color: white;
+		}
+		.fa-twitter {
+			background: #4FC2D6;
+			color: white;
+		}
+		.socialbtn{
+			display: flex;
+			grid-column-gap: 15px;
+			justify-content: center;
+		}
+		/* Solid border */
+		hr.solid {
+			border-top: 1px solid #4FC2D6;
+			padding-bottom: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="bodyofbody" style="margin: 70px">
+		<nav class="navbar navbar-expand-sm bg-light fixed-top"
+		style="padding-left: 70px; padding-right: 70px; height: 60px">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="index.html">
+			<p
+			style="color: #4FC2D6; padding-top: 10px; font-family: 'Tajawal', sans-serif; font-size: 28px; font-weight: 300">
+		Beauty Spa</p>
+	</a>
+
+
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+			<a class="nav-link"  href="index.html">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" style="font-weight: bold;" href="SpaService.html">Service</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="SpaAboutUs.html">About Us</a>
+		</li>
+	</ul>
+</nav>
+
+<br><br>
+
+<h2 style="text-align: center; color: #4FC2D6 ">Beauty Spa</h2>
+
+<br><br>
+
+<img src="C:\Users\PC\Desktop\code\code images\spa\landingservice.jpg" style="justify-content: center; width: 100%; height: 480px; object-fit: cover;">
+
+
+<h3 style="padding-top: 80px; padding-bottom: 60px">Hands</h3>
+
+<div class="row">
+	<div class="col" style="padding-left: 0">
+		<div class="contentservice">
+			<h5>
+				NAKED MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff, cuticle tidy, mini massage, moisturise + oil (no polish)
+			</p>
+
+			<h5 style="font-weight: 500">
+				20 MIN | £22
+			</h5>
+		</div>
+		
+		<div class="contentservice">
+			<h5>
+				SIGNATURE MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, polish, moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				30 MIN | £27
+			</h5>
+		</div>
+		<div class="contentservice">
+			<h5>
+				GEL MANICURE 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, gel, moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				45 MIN | £38
+			</h5>
+		</div>
+		<div class="contentservice">
+			<h5 >
+				FREE FROM MANICURE 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, free from polish, organic moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				30 MIN | £38
+			</h5>
+		</div>
+		<div class="contentservice" >
+			<h5>
+				FREE FROM GEL MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, free from gel, organic moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				45 MIN | £45
+			</h5>
+		</div>
+		<button class="btnbooking">Book appointment</button>
+
+	</div>
+	<div class="col">
+		<img src="C:\Users\PC\Desktop\code\code images\spa\sv1.jpg" style="width: 100%; height: 743px; object-fit: cover;">
+	</div>
+	
+</div>
+
+<h3 style="padding-top: 80px; padding-bottom: 60px">Feet</h3>
+
+<div class="row">
+
+	<div class="col">
+		<img src="C:\Users\PC\Desktop\code\code images\spa\sv2.jpg" style="width: 100%; height: 743px; object-fit: cover;">
+	</div>
+	
+	<div class="col" style="padding-left: 0">
+		<div class="contentservice">
+			<h5 >
+				NAKED MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff, cuticle tidy, mini massage, moisturise + oil (no polish)
+			</p>
+
+			<h5 style="font-weight: 500">
+				20 MIN | £22
+			</h5>
+		</div>
+		
+		<div class="contentservice">
+			<h5 >
+				SIGNATURE MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, polish, moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				30 MIN | £27
+			</h5>
+		</div>
+		<div class="contentservice">
+			<h5 >
+				GEL MANICURE 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, gel, moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				45 MIN | £38
+			</h5>
+		</div>
+		<div class="contentservice">
+			<h5 >
+				FREE FROM MANICURE 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, free from polish, organic moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				30 MIN | £38
+			</h5>
+		</div>
+		<div class="contentservice" >
+			<h5 >
+				FREE FROM GEL MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				file + buff,  cuticle tidy, mini massage, free from gel, organic moisturise + oil
+			</p>
+			<h5 style="font-weight: 500">
+				45 MIN | £45
+			</h5>
+		</div>
+		<button class="btnbooking">Book appointment</button>
+	</div>
+	
+</div>
+<h3 style="padding-top: 80px; padding-bottom: 60px">Nail art</h3>
+<div class="row">
+
+	<div class="col">
+		<div class="contentservice">
+			<br><br><br>
+			<h6 style="color: #4FC2D6">
+				CLEAN N SIMPLE (NAIL ART)
+			</h6>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				Dots  10 MIN | £10 <br>
+                Lines, French, Moons  15 MIN | £15
+			</p>
+			<br>
+			<h6 style="color: #4FC2D6">
+				ALL OUT (NAIL ART)
+			</h6>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 24px; margin: 0; line-height: 35px">
+				Chrome, foil, tape (gel only)   15 MIN | £20 <br>
+				Tortoiseshell, marble, animal print   20 MIN | £25 <br>
+				Tie dye, Flames   25 MIN | £30 <br>
+				Custom design 30MIN | £35 <br>
+				Custom design - signature nails (two nails max)  15 MIN | £17
+			</p>
+		</div>
+		<button class="btnbooking2">Book appointment</button>
+	</div>
+	<div class="col">
+		<img src="C:\Users\PC\Desktop\code\code images\spa\sv3.jpg" style="width: 100%; height: 489.5px; object-fit: cover;">
+	</div>
+</div>
+
+<section>
+	<h3 style="padding-top: 80px; padding-bottom: 60px">A La Carte</h3>
+	<img src="C:\Users\PC\Desktop\code\code images\spa\sv4.jpg" style="justify-content: center; width: 100%; height: 600px; object-fit: cover;">
+	<br> <br> <br>
+	<div class="contentservice">
+			<h5 style="font-size: 30px" >
+				NAKED MANICURE
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				If you’re ready to take a break from acrylics/gels & worried about the condition they’re in book our rehab treatment for step one of your transition back to healthy natural nails. Soak off (if needed),  file + buff, revitalising oil mask followed by our free from moisture treatment & either Kure top coat or high shine buff to finish
+			</p>
+
+			<h5 style="font-size: 30px; font-weight: 500">
+				75MIN | £48
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice">
+			<h5 style="font-size: 30px">
+				FREE FROM MOISTURE TREATMENT (ADD ON ONLY)
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				Plant-based, petroleum-free alternative to paraffin wax. A rich blend of shea butter, soy, jojoba, organic coconut oil, vitamin E, and essential oils that moisturise and leaves the skin soft and supple. 
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				20 MIN | £18
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice">
+			<h5 style="font-size: 30px">
+				CALLUS TREATMENT 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				Perfect for cracked heels, Mavex CALLUSPEELING is free from: parabens, formaldehyde, added preservatives, mineral oil or paraffin. Formulated with a synergic complex of plant extracts from Swiss alpine herbs & plants such as Gentian, Blueberry, Spruce Fir & pure glacier water encapsulated in liposomes, leaving you with beautiful feet. Suitable for customers with diabetes CALLUSPEELING negates the use of blades or drills 
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				30 MIN | £38
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice">
+			<h5 style="font-size: 30px">
+				CALLUS TREATMENT (ADD ON ONLY) 
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				Add Mavex CALLUSPEELING onto your pedicure treatment
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				15 MIN | £22
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice" >
+			<h5 style="font-size: 30px">
+				RESTORE TREATMENT
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				Deeply penetrating treatment that strengthens the nail plate by filling in gaps & ridges while providing a protective shield to prevent nails from breaking. Using IBX enables your natural nail to grow longer while looking & feeling healthier (includes a NAKED MANICURE)
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				35 MIN | £38
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice">
+			<h5 style="font-size: 30px">
+				RESTORE TREATMENT (ADD ON ONLY)
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				Add IBX to the base of your manicure treatment 
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				15 MIN | £22
+			</h5>
+		</div>
+		<hr class="solid">
+		<div class="contentservice" >
+			<h5 style="font-size: 30px">
+				THE R+R
+			</h5>
+			<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 28px; margin: 0; line-height: 40px">
+				We’ve combined two of our most popular treatments to give your nails a full rejuvenation - The R+R is a hybrid of our REHAB and RESTORE! This new super treatment includes gel/acrylic removal, a naked manicure, IBX to penetrate and mend your nail beds, finishing with a warm essential oil & Shea butter mask (a petroleum free paraffin wax alternative) to hydrate your skin & hands!
+			</p>
+			<h5 style="font-size: 30px; font-weight: 500">
+				90 MIN | £70
+			</h5>
+		</div>
+		<button class="btnbooking" style="width: 50%">Book appointment</button>
+</section>
+
+</div>
+<div class="footer">
+	<br>
+	<h4 style="letter-spacing: 3px; "> 081-928-7888 </h4> <br>
+	<h4 style="letter-spacing: 1px"> Join our list </h4> <br>
+	<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 18px; line-height: 20px">Subscribe to our mailing list to receive updates and promotional offers.</p> <br>
+
+	<div class="email-register">
+		<input placeholder="Email address" class="input-subcribe">
+		<button class="btn-subcribe">SUBCRIBE</button>
+	</div>
+	<br>
+	<div class="socialbtn" >
+		<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+		<a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+		<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+		<a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
+	</div>
+	<br>
+	<p style="font-family: 'Tajawal', sans-serif; font-weight: 300; font-size: 18px; line-height: 20px">Beauty Spa Copyright 2021. All right reserved.</p>
+</div>
+
+
+
+
+</body>
+
+</html>
